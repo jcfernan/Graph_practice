@@ -41,6 +41,11 @@ function renderChart(series){
 			label_text: 'Source: National Center for Health Statistics',
 			position: 'bottom left'
 		}],
+        legend_visible: false,
+		defaultSeries_lastPoint_label_text: '<b>%seriesName</b>',
+        // xAxis: {crosshair: {enabled: true}},
+        xAxis_crosshair_enabled: true,
+        defaultPoint_tooltip: '%seriesName <b>%yValue</b> years',
 		series: series
 	});
 }
